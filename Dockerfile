@@ -1,7 +1,7 @@
-FROM node:18.0.0-apline
+FROM node:18.0.0-alpine
 
 RUN mkdir -p /usr/src/app
-WORKDIT /usr/src/app
+WORKDIR /usr/src/app
 
 COPY . . 
 ENV NODE_OPTIONS=--openssl-legacy-provider
